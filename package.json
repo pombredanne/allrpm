@@ -1,0 +1,28 @@
+{
+  "name": "allfedora",
+  "version": "1.0.0",
+  "description": "Graph crawler of Fedora 22 archive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dependency",
+    "debian",
+    "crawler",
+    "indexer",
+    "graph"
+  ],
+  "author": "Pavel Odvody",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaded-enmity/allfedora"
+  },
+  "dependencies": {
+    "ngraph.graph": "0.0.11",
+    "ngraph.fromdot": "0.1.5",
+    "ngraph.offline.layout": "^1.0.0",
+    "ngraph.tobinary": "^1.0.1"
+  }
+}
