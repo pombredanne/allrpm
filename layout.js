@@ -1,18 +1,17 @@
-require('./loadGraph.js')(runLayout);
+var loadGraph = require('./lib/loadGraph.js');
+var graph = loadGraph();
 
-function runLayout(graph) {
-  console.log('Loaded graph with ' + graph.getLinksCount() + ' edges; ' + graph.getNodesCount() + ' nodes');
+console.log('Loaded graph with ' + graph.getLinksCount() + ' edges; ' + graph.getNodesCount() + ' nodes');
 
-  var layout = require('ngraph.offline.layout')(graph);
+var layout = require('ngraph.offline.layout')(graph);
 
-  console.log('Starting layout');
-  layout.run();
+console.log('Starting layout');
+layout.run();
 
-  var save = require('ngraph.tobinary');
-  save(graph, {
-    outDir: './data'
-  });
+var save = require('ngraph.tobinary');
+save(graph, {
+  outDir: './data'
+});
 
-  console.log('Done.');
-  console.log('Copy `links.bin`, `labels.bin` and positions.bin into vis folder');
-}
+console.log('Done.');
+console.log('Copy `links.bin`, `labels.bin` and positions.bin into vis folder');
