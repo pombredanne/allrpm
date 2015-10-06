@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "ngraph.graph": "0.0.12",
-    "ngraph.fromdot": "0.1.5",
+    "ngraph.fromdot": "0.1.6",
     "ngraph.offline.layout": "^1.0.1",
     "ngraph.tobinary": "^1.0.1"
   }
