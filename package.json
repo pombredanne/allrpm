@@ -1,7 +1,7 @@
 {
-  "name": "allfedora",
+  "name": "allrpm",
   "version": "1.0.0",
-  "description": "Graph crawler of Fedora 22 archive",
+  "description": "DNF-based graph crawler of RPM repositories",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shaded-enmity/allfedora"
+    "url": "https://github.com/shaded-enmity/allrpm"
   },
   "dependencies": {
     "ngraph.graph": "0.0.12",
